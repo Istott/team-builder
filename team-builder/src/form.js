@@ -36,32 +36,42 @@ const NoteForm = props => {
   
     return (
       <form onSubmit={submitForm}>
-        <label htmlFor="title">Name</label>
-        <input
-          id="name"
-          type="text"
-          name="name"
-          onChange={handleChanges}
-          value={note.name}
-        />
-        <label htmlFor="email">Email</label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          onChange={handleChanges}
-          value={note.email}
-        />
-        <label htmlFor="note">Role</label>
-        <input
-          id="note"
-          type="text"
-          name="role"
-          onChange={handleChanges}
-          value={note.role}
-        />
+        <div className="formdiv">
+          <div className="namestuff">
+            <label htmlFor="title">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              onChange={handleChanges}
+              value={note.name}
+            />
+          </div>
+          
+          <div className="namestuff">
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              onChange={handleChanges}
+              value={note.email}
+            />
+          </div>
 
-        <button type="submit">Add Member</button>
+          <div className="namestuff">
+            <label htmlFor="note">Role</label>
+            <input
+              id="note"
+              type="text"
+              name="role"
+              onChange={handleChanges}
+              value={note.role}
+            />
+          </div>
+
+          <button type="submit">Add Member</button>
+        </div>
       </form>
     );
   };

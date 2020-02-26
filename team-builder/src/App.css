@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* Form.js */
+
+.formdiv {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.namestuff {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1%;
+}
+
+/* /////note.js//// */
+.note {
+  margin: 2%;
+  padding: 1%;
+  background-color: #61dafb;
+  border-radius: 10px;
+  color: #282c34;
+}

@@ -58,8 +58,12 @@ function MemberForm() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>New Member</h1>
+
         <NoteForm addNewMember={addNewMember}/>
-        <Notes memberValues={memberValues}/>
+      
+        <div className="form">
+          <Notes memberValues={memberValues}/>
+        </div>
       </header>
     </div>
   );

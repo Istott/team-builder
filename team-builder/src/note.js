@@ -5,9 +5,9 @@ const Notes = props => {
     <div className="note-list">
       {props.memberValues.map(note => (
         <div className="note" key={note.id}>
-          <h2>{note.name}</h2>
-          <p>{note.email}</p>
-          <p>{note.role}</p>
+          <h2>Name: {note.name}</h2>
+          <h3>Email: {note.email}</h3>
+          <h4>Role: {note.role}</h4>
         </div>
       ))}
     </div>
