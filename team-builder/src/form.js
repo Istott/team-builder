@@ -13,14 +13,7 @@ const NoteForm = props => {
   
     const handleChanges = e => {
       console.log(note);
-      // console.log("the name", e.target.name)
-      // console.log("the event target", e.target)
-      //we are dynamically setting our keys.
-      // setNote({ ...note, title: e.target.value });
-      // setNote({ ...note, note: e.target.value });
-      //  const nameObj={...note}
-      //  nameObj[e.target.name]= e.target.value
-      // setNote(nameObj)
+    
       setNote({
         ...note,
         [e.target.name]: e.target.value
@@ -74,55 +67,7 @@ const NoteForm = props => {
         </div>
       </form>
     );
-  };
+};
   
-  export default NoteForm;
+export default NoteForm;
   
-
-// function MemberForm() {
-//     const [memberValues, setMemberValues] = useState({
-//         name: '',
-//         email: '',
-//         role: ''
-//     });
-
-//     const addNewMember = member => {
-//         const newMember = {
-//             name: member.name,
-//             email: member.email,
-//             role: member.role
-//         };
-
-//         setMemberValues([...memberValues, newMember]);
-//     };
-
-//     return (
-//         <div className='MemberForm'>
-//             <h1>New Member</h1>
-//             <form onSubmit={addNewMember}>
-//                 <label htmlFor="title">name</label>
-//                 <input
-//                     name="title"
-//                     onChange={MemberForm}
-//                     value={memberValues.title}
-//                 />
-//                 <label htmlFor="email">email</label>
-//                 <input
-//                     email="email"
-//                     onChange={MemberForm}
-//                     value={memberValues.body}
-//                 />
-//                  <label htmlFor="role">role</label>
-//                 <textarea
-//                     role="role"
-//                     onChange={MemberForm}
-//                     value={memberValues.body}
-//                 />
-//                 <button type="submit">Add Member</button>
-//             </form>
-
-//         </div>
-//     );
-// }
-
-// export default MemberForm;
